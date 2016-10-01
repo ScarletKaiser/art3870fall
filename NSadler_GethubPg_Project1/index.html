@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+
+  </head>
+
+
+<body>
+
+<!-- My Name  -->
+  <div class="row">
+    <br></br>
+    <h1 class= "columns small-12" > Nicholas J Sadler </h1>
+    <br></br>
+    <br></br>
+  </br>
+  </div>
+
+<!-- Time of Day  -->
+  <div class="row">
+    <h2 class="columns small-12">
+      <span id="greeting">hello!</span>
+    </h2>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+  </div>
+
+<!-- Portrait  -->
+  <div class="row">
+      <img class="img-port" src="http://i.imgur.com/yxZyZPo.jpg" alt="Nick Sadler's face" title="source: imgur.com" width="300" height="300" />
+
+  </div>
+
+  <script language="JavaScript">
+    var myDate = new Date();
+
+    /* hour is before noon */
+    if ( myDate.getHours() < 12 )
+    {
+      document.getElementById('greeting').innerHTML = "Top of the Morning!!";
+    }
+    else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+    if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+    {
+      document.getElementById('greeting').innerHTML = "Lovely Afternoon Vistor!!";
+    }
+    else  /* the hour is after 5pm, so it is between 6pm and midnight */
+    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+    {
+     document.getElementById('greeting').innerHTML = "Good Eveningtide!";
+    }
+    else  /* the hour is not between 0 and 24, so something is wrong */
+    {
+      document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+    }
+
+  </script>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*Background Color of Webpage*/
+body {
+  background-color: #4A708B
+}
+
+/*Name*/
+h1 {
+    font-family: 'Yatra One', cursive;
+    font-size: 48px;
+    color: #EEF7F7;
+    text-align: center;
+}
+
+/*Greeting of the Day*/
+h2 {
+  font-family: 'Lalezar', cursive;
+  font-size: 24px;
+  color: #EEF7F7;
+  text-align: center;
+}
+
+/*Gerneral Container that cneters content*/
+div{
+width: 50%;
+margin: 0px auto 0px auto}
+
+/*Class to make a round image for the portrait*/
+.img-port {
+    border-radius: 50%;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+}
