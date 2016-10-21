@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  </head>
+
+
+<body>
+
+<div class="dropdown hide">
+  <h1 class="floatR"> European </br>Market and Deli<h1>
+  <button onclick="myFunction()" class="dropbtn">  List  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="departments.html">Departments</a>
+    <a href="beverages.html">Beverages</a>
+    <a href="appetizers.html">Catering</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+<img src="http://www.europeanfoodbayarea.com/wp-content/uploads/2011/11/russian_food1.jpg" alt="Cavier" height="666px" width="100%" >
+
+  <div class="sidebar">
+      <h1 class="darktext"> European </br>Market and Deli<h1>
+      <a href="index.html"><button class="button button1">Home</button></a>
+      <a href="departments.html"><button class="button button1">Departments</button></a>
+      <a href="beverages.html"><button class="button button1">Beverages</button></a>
+      <a href="appetizers.html"><button class="button button1">Catering</button></a>
+      <a href="about.html"><button class="button button1">About</button></a>
+
+<a href="appetizers.htlm"><img src="IMAGE LINK HERE"></a>
+
+  </div>
+
+<!-- JavaScript for Drop Down menu -->
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
