@@ -5,273 +5,58 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation Page</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body>
 
-      <!--Sprite-->
-      <div class="mothgirl1"></div>
+      <div class="large">
 
-      <!--Testing-->
-      <h1>CSS Image Hover Effects</h1>
-    	<p>← <a href="http://www.nxworld.net/tips/css-image-hover-effects.html" target="_blank">View the article</a></p>
+        <!--Circle Text Start-->
+        <div id="container">
+        <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="criclePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
+            </defs>
+            <circle cx="150" cy="150" r="150" fill="#000"/>
+            <g>
+                <use xlink:href="#criclePath" fill="none"/>
+                <text fill="#a1a4a8">
+                    <textPath xlink:href="#criclePath">. Cute Lil' Insect Quotes! .Cute Lil' Insect Quotes!</textPath>
+                </text>
+            </g>
+        </svg>
+        <div class="mothgirl1 Centerer"></div>
+        </div>
+        </div>
 
-    	<h2>No Effect</h2>
-    	<div class="column">
-    		<div>
-    			<div class="mothgirl1"></div>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+        <!--Circle Text End-->
 
-    	<h2 id="demo01">1. Zoom In #1</h2>
-    	<div class="hover01 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
 
-    	<h2 id="demo02">2. Zoom In #2</h2>
-    	<div class="hover02 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      </div>
 
-    	<h2 id="demo03">3. Zoom Out #1</h2>
-    	<div class="hover03 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <!--Quote 1 Link-->
+    	<h2 id="demo15">What does the Beatle have to say?</h2>
 
-    	<h2 id="demo04">4. Zoom Out #2</h2>
-    	<div class="hover04 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <div class="large hover15">
+        <figure class="Centerer"><a href="quote1.html"><img src="https://s-media-cache-ak0.pinimg.com/736x/ef/c3/ca/efc3cad832b6af862aa0b8f2470f5503.jpg" /></figure>
+      </div>
 
-    	<h2 id="demo05">5. Slide</h2>
-    	<div class="hover05 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <!--Quote 2 Link-->
+      <h2 id="demo15">What does the Butterfly have to say?</h2>
 
-    	<h2 id="demo06">6. Rotate<span>(+Zoom Out)</span></h2>
-    	<div class="hover06 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <div class="large hover15">
+        <figure class="Centerer"><a href="quote2.html"><img src="https://s-media-cache-ak0.pinimg.com/736x/da/3b/9a/da3b9ae42bce6b2ac98cdd70155d9ac6.jpg" /></figure>
+      </div>
 
-    	<h2 id="demo07">7. Blur</h2>
-    	<div class="hover07 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <!--Quote 3 Link-->
+      <h2 id="demo15">What does the Cicadia have to say?</h2>
 
-    	<h2 id="demo08">8. Gray Scale</h2>
-    	<div class="hover08 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
+      <div class="large hover15">
+        <figure class="Centerer"><a href="quote3.html"><img src="https://s-media-cache-ak0.pinimg.com/736x/77/5d/8b/775d8b044c8333942116c9b9b08b0b59.jpg" /></figure>
+      </div>
 
-    	<h2 id="demo09">9. Sepia</h2>
-    	<div class="hover09 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo10">10. Blur + Gray Scale</h2>
-    	<div class="hover10 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo11">11. Opacity #1</h2>
-    	<div class="hover11 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo12">12. Opacity #2</h2>
-    	<div class="hover12 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure style="background-color:#9b59b6;"><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure style="background-color:#3498db;"><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo13">13. Flashing</h2>
-    	<div class="hover13 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo14">14. Shine</h2>
-    	<div class="hover14 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
-
-    	<h2 id="demo15">15. Circle</h2>
-    	<div class="hover15 column">
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic02.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    		<div>
-    			<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic03.jpg" /></figure>
-    			<span>Hover</span>
-    		</div>
-    	</div>
   </body>
 </html>

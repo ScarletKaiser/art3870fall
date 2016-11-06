@@ -1,0 +1,113 @@
+
+/* for testing
+*{
+    border: 3px solid red;
+}
+*/
+
+h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2{
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  text-align: center;
+    color: #ffffff;
+}
+
+p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  text-align: center;
+    color: #a1a4a8;
+  }
+
+body {
+  background-color: #56596d;
+  font-family: Helvetica;
+}
+
+
+
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  box-shadow: 0px 5px 10px gray;
+  left: 15%;
+  right:10%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1.5s;
+          transition: transform 1.5s;
+          width: 350px;
+          height: auto;
+}
+
+.card__front {
+  background-color: #ffffff;
+  width: 350px;
+  height: auto;
+}
+
+.card__back {
+  background-color: #ffffff;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+          width: 350px;
+          height: auto;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: 70;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+  line-height: 50px;
+  background-color: #000;
+}
+
+.picture {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+.left, .center, .right {
+  background: #56596d;
+}
+
+/* hover flip effect */
+.card.effect__EFFECT:hover .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+          width: 350px;
+          height: auto;
+}
+
+.card.effect__EFFECT:hover .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+          width: 350px;
+          height: auto;
+}
