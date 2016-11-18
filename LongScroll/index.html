@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="scroll into view script">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Long Scroll</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js">
+  </script>
+
+</head>
+
+<body id="grad">
+
+    <!--
+    //////////////////////
+    STICKY DIV (BECOMES FIXED AT DEFINED SCROLL VALUE)
+    FallGirl DIV (BECOMES FIXED AT DEFINED SCROLL VALUE)
+    //////////////////////
+     -->
+
+    <h1 id="sticky">Sticky Div</h1>
+    <h1 id="fallGirl">FALLING GIRL</h1>
+
+    <!--
+    //////////////////////
+     Text Articles (FIXED POEM SECTION THAT FADES IN
+     AND OUT AT DEFINED SCROLL VALUE)
+    //////////////////////
+     -->
+
+     <article id="line1">Roses are red,</article>
+
+    <!--
+    //////////////////////
+    COUNTERS - Teal (bottom) and White (top left)
+    //////////////////////
+     -->
+
+    <div id="hrz_counter">horizontal scroll</div>
+    <div id="vert_counter">Counter</div>
+
+
+      <!--
+    //////////////////////
+    Vertical Parallax Divs
+    //////////////////////
+     -->
+    <section id="parallax_wrap">
+      <div class="vert_parallax">PRLX</div>
+      <div class="vert_parallax">PRLX SLOW</div>
+      <div class="vert_parallax">PRLX FAST</div>
+    </section>
+
+    <!--
+    //////////////////////
+    Placeholders
+    //////////////////////
+     -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div>34</div>
+    <div>35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div>41</div>
+    <div>42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div>48</div>
+    <div>49</div>
+    <div>50</div>
+
+
+    <!--
+    //////////////////////
+    JS for Falling Girl
+    //////////////////////
+     -->
+
+    <script type="text/javascript">
+
+    $(window).scroll(function() {
+
+    if ($(this).scrollTop() > 600) {
+
+      $("#fallGirl").css({
+        "position": "fixed",
+        "top": "800px",
+        "opacity": "1",
+        "color":"white"
+
+      });
+
+    }
+
+      else {
+    $("#fallGirl").css({
+      "position": "absolute",
+      "top": "1400px" ,
+      "opacity": ".1",
+      "background-color":"black",
+      "padding":"5px",
+      "color":"grey"
+    });
+    	}
+    });
+
+    </script>
+
+
+    <!--
+    //////////////////////
+    JS for Articles appearing
+    //////////////////////
+     -->
+
+    <script type="text/javascript">
+
+    $(window).scroll(function() {
+
+    if ($(this).scrollTop() < 200) {
+      $("#line1").css({
+        "position": "absolute",
+        "top": "800px" ,
+        "opacity": ".1",
+        "background-color":"black",
+        "padding":"5px",
+        "color":"grey"
+      });
+    }
+
+    if ($(this).scrollTop() > 400) {
+      $("#line1").css({
+        "position": "absolute",
+        "top": "800px" ,
+        "opacity": ".1",
+        "background-color":"black",
+        "padding":"5px",
+        "color":"grey"
+      });
+    }
+
+    else {
+      $("#line1").css({
+        "position": "absolute",
+        "top": "800px",
+        "opacity": "1",
+        "color":"white"
+
+      });
+    }
+
+    });
+
+    </script>
+
+    <!--
+    //////////////////////
+    JS for Sticky Div
+    //////////////////////
+     -->
+
+    <script type="text/javascript">
+
+    $(window).scroll(function() {
+
+    if ($(this).scrollTop() > 600) {
+
+      $("#sticky").css({
+        "position": "fixed",
+        "top": "0",
+        "opacity": "1",
+        "color":"white"
+
+      });
+
+    }
+
+      else {
+    $("#sticky").css({
+      "position": "absolute",
+      "top": "600px" ,
+      "opacity": ".1",
+      "background-color":"black",
+      "padding":"5px",
+      "color":"grey"
+    });
+    	}
+    });
+
+    </script>
+
+
+    <!--
+    //////////////////////
+    Horizontal Counter
+    //////////////////////
+     -->
+    <script type="text/javascript">
+    	$(window).scroll(function() {
+        $("div#hrz_counter").css({
+            "left": $(window).scrollTop() + "px"
+        }).text("px:"+$(window).scrollTop());
+    });
+    </script>
+    <!--
+    //////////////////////
+    Vertical Scroll Counter
+    //////////////////////
+     -->
+
+
+     <script type="text/javascript">
+      $(window).scroll(function() {
+        $("div#vert_counter").text("px:" +$(window).scrollTop());
+    });
+    </script>
+
+    <!--
+    //////////////////////
+    Parallax divs (targeted with nth-child)
+
+    http://css-tricks.com/how-nth-child-works/
+
+    //////////////////////
+     -->
+
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        $("div.vert_parallax").css({
+            "top": ($(window).scrollTop()*1) + "px"
+        }).text("Regular:"+ $(window).scrollTop());
+    });
+    </script>
+
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        $("#parallax_wrap div:nth-child(3)").css({
+            "top": ($(window).scrollTop()*2) + "px"
+        }).text("Fast:"+ $(window).scrollTop());
+    });
+    </script>
+
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        $("#parallax_wrap div:nth-child(2)").css({
+            "top": ($(window).scrollTop()*0.5) + "px"
+        }).text("Slow:"+ $(window).scrollTop());
+    });
+    </script>
+
+</body>
+</html>

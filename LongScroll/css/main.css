@@ -1,0 +1,110 @@
+  *{
+  border: 5px solid red;
+  }
+
+  /*For Body/Background gradient*/
+  #grad {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, black); /* Standard syntax */
+  }
+
+  div {border-bottom:1px solid #555;
+       width:100%;
+       height:200px;
+       padding: 0;
+       margin: 0;
+     }
+
+  article {border:1px solid #ffffff;
+       height:auto;
+       width:auto;
+       padding:30;
+       margin: 10;
+       font-size: 48px;
+       color: white;
+     }
+
+  /*For Peom Sections*/
+  #line1{
+    position:fixed;
+    text-align: center;
+    background-color:silver;
+    top:100px;
+    left:5%;
+  }
+
+  #sticky {
+    position:fixed;
+    width:200px;
+    text-align: center;
+    background-color:silver;
+    top:100px;
+    left:30%;
+    margin-left:-52px;}
+
+  #fallGirl {
+    position:fixed;
+    width:400px;
+    text-align: center;
+    background-color:silver;
+    top:400px;
+    left:40%;
+    margin-left:-52px;}
+
+  #hrz_counter{
+    width:150px;
+    position:fixed;
+    height:50px;
+    bottom: 0;
+    background-color:teal;
+    text-align:center;
+    line-height:50px;
+    border: none;
+  }
+
+  #vert_counter{
+   width:150px;
+  position:fixed;
+  line-height: 50px;
+  text-align: center;
+   height:50px;
+   top:0px;
+   left: 0px;
+   border: 5px black solid;
+  background-color:#fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 20px;
+  z-index: 100;
+  }
+
+  .vert_parallax{
+    position:fixed;
+    top:0;
+    width: 300px;
+    height: 100px;
+    background-color:#0000ff;
+    left:40%;
+    color:white;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0.6;
+  }
+
+  #parallax_wrap{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+  }
+
+  #parallax_wrap div:nth-child(2){
+    left: 0;
+  }
+
+  #parallax_wrap div:nth-child(3){
+    left: 80%;
+  }
