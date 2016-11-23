@@ -18,22 +18,35 @@
        margin: 0;
      }
 
-  article {border:1px solid #ffffff;
-       height:auto;
+  article {
+      height:auto;
        width:auto;
        padding:30;
-       margin: 10;
-       font-size: 48px;
-       color: white;
+       margin: 2;
+       font-size: 60px;
      }
 
   /*For Peom Sections*/
   #line1{
     position:fixed;
     text-align: center;
-    background-color:silver;
+    background-color:white;
     top:100px;
-    left:5%;
+    left:12%;
+    color: black;
+    border-bottom:2px solid black;
+    font-size: 180px;
+  }
+
+  #line2{
+    position:fixed;
+    text-align: center;
+    background-color:white;
+    top:100px;
+    right: 12%;
+    color: black;
+    border-bottom:2px solid black;
+    font-size: 180px;
   }
 
   #sticky {

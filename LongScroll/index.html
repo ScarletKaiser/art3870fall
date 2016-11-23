@@ -20,7 +20,7 @@
     //////////////////////
      -->
 
-    <h1 id="sticky">Sticky Div</h1>
+    <!-- <h1 id="sticky">Sticky Div</h1> -->
     <h1 id="fallGirl">FALLING GIRL</h1>
 
     <!--
@@ -31,6 +31,7 @@
      -->
 
      <article id="line1">Roses are red,</article>
+     <article id="line2">Violets are blue,</article>
 
     <!--
     //////////////////////
@@ -136,7 +137,7 @@
     $("#fallGirl").css({
       "position": "absolute",
       "top": "1400px" ,
-      "opacity": ".1",
+      "opacity": "1",
       "background-color":"black",
       "padding":"5px",
       "color":"grey"
@@ -153,39 +154,46 @@
     //////////////////////
      -->
 
+
+    <!-- Roses are Red-->
     <script type="text/javascript">
 
     $(window).scroll(function() {
 
-    if ($(this).scrollTop() < 200) {
+    if ($(this).scrollTop() > 1000 && $(this).scrollTop() < 1400) {
       $("#line1").css({
         "position": "absolute",
-        "top": "800px" ,
-        "opacity": ".1",
-        "background-color":"black",
-        "padding":"5px",
-        "color":"grey"
-      });
-    }
-
-    if ($(this).scrollTop() > 400) {
-      $("#line1").css({
-        "position": "absolute",
-        "top": "800px" ,
-        "opacity": ".1",
-        "background-color":"black",
-        "padding":"5px",
-        "color":"grey"
+        "top": "1400px" ,
+        "opacity": ".8",
       });
     }
 
     else {
       $("#line1").css({
         "position": "absolute",
-        "top": "800px",
-        "opacity": "1",
-        "color":"white"
+        "top": "1400px",
+        "opacity": "0.1",
+      });
+    }
 
+    });
+
+    <!-- Violets are blue -->
+    $(window).scroll(function() {
+
+    if ($(this).scrollTop() > 1700 && $(this).scrollTop() < 2100) {
+      $("#line2").css({
+        "position": "absolute",
+        "top": "2200px" ,
+        "opacity": ".8",
+      });
+    }
+
+    else {
+      $("#line2").css({
+        "position": "absolute",
+        "top": "2200px",
+        "opacity": "0.1",
       });
     }
 
